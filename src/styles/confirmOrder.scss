@@ -1,0 +1,67 @@
+@import "colors";
+
+.confirmOrder {
+    background-color: $pink;
+    width: 100%;
+    height: 70vh;
+
+    >main {
+        height: 100%;
+        background-color: white;
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+
+        >h1 {
+            text-align: center;
+            text-transform: uppercase;
+            font: 100 3rem "Roboto";
+            font-weight: 100;
+        }
+
+        >form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            >div {
+                background-color: rgba(233, 233, 233);
+                margin: 1rem;
+                border-radius: 5px;
+                padding: 1rem;
+                width: 70%;
+                display: flex;
+                justify-content: space-between;
+                height: 10vh;
+
+                >label {
+                    white-space: nowrap;
+                    margin: 0.6rem;
+                }
+            }
+
+            >button {
+                background-color: $blue;
+                color: white;
+                outline: none;
+                padding: 0.5rem 1rem;
+                border-radius: 5px;
+                cursor: pointer;
+                font-size: 1.1rem;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .confirmOrder>main>form {
+        >div {
+            width: 100%;
+        }
+
+        >button {
+            width: 100%;
+        }
+    }
+}

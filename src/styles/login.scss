@@ -1,0 +1,63 @@
+@import "colors";
+
+.login {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../assets/background.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    >form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        padding: 2rem;
+        width: 35%;
+        height: 70%;
+
+        >h2 {
+            font-family: "Roboto";
+            text-transform: uppercase;
+            font-size: 2rem;
+            margin: 2rem 0;
+        }
+
+        >input,
+        button {
+            padding: 1rem;
+            outline: none;
+            border: 1px solid rgb(202, 202, 202);
+            margin: 0.5rem;
+            width: 60%;
+            border-radius: 2px;
+        }
+
+        >button {
+            background-color: $blue;
+            border: none;
+            cursor: pointer;
+            color: white;
+            font-size: 1rem;
+
+            &:hover {
+                background-color: $darkblue;
+            }
+        }
+
+        >a {
+            margin-top: 1vh;
+            font-family: "Roboto";
+            font-size: 1rem;
+            color: #A8A8A8;
+
+            &:hover {
+                color: #303030;
+            }
+        }
+    }
+
+}
